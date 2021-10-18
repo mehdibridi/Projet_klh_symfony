@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div class="container" >
+    {{ form_start(form, {attr: {novalidate: 'novalidate'}}) }}
+     <div class="form-group"> {{ form_row(form.nom, {'attr':{'class':'form-control'}}) }}</div>
+       {{ form_end(form) }}
+</div>
+
+{% endblock %}
